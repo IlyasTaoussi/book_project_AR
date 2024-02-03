@@ -1,24 +1,30 @@
 import React from 'react';
-import '../styles/WelcomePage.css'; // Make sure to create this CSS file and import it
+import '../styles/WelcomePage.css'; 
+
 import Footer from '../components/Footer';
+import Header from '../components/Header';
+
+import BookList from '../datas/BookList';
+
 
 const WelcomePage = () => {
   return (
-    <div className="welcome-page">
-      <header>
-        <div className="header-content">
-          <h1>BookBuddy</h1>
-          <nav>
-            <ul>
-              <li>BOOKS</li>
-              <li>TEXTBOOKS</li>
-              <li>NOOK BOOKS</li>
-              <li>AUDIOBOOKS</li>
-              <li>MAGAZINES</li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+	<div className="welcome-page">
+		<Header />
+		<div className="header-content">
+			<h1>BookBuddy</h1>
+			<div className="menu-section">
+				<nav>
+					<ul>
+						<li>BOOKS</li>
+						<li>TEXTBOOKS</li>
+						<li>NOOK BOOKS</li>
+						<li>AUDIOBOOKS</li>
+						<li>MAGAZINES</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
       
       <main>
         <div className="description">
@@ -28,8 +34,8 @@ const WelcomePage = () => {
           <p>We are Aya, Maha, and Faustine, students from Polytech, working together to create this full-stack project.</p>
         </div>
       </main>
-      
-       <Footer />
+	  
+	  <Footer />
     </div>
   );
 };

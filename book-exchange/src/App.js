@@ -14,20 +14,26 @@ function App() {
 
 export default App*/
 // App.js
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+import React, { useEffect, useState } from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import WelcomePage from './pages/WelcomePage';
+import LoginPage from './pages/LoginPage';
+
 function App() {
-	console.log("app");
-  return (
-    <Router>
+	
+	const [loggedIn, setLoggedIn] = useState(false);
+	const [email, setEmail] = useState("");
+	
+	return (
+	<Router>
 		<Routes>
-		<Route path="/" element={<WelcomePage />} />
-      {/* Ajoutez d'autres routes si nécessaire */}
+		<Route path="/" element={<WelcomePage email={email} loggedIn={loggedIn} setLoggedIn={setLoggedIn} />} />
+		<Route path="/login" element={<LoginPage setLoggedIn={setLoggedIn} setEmail={setEmail}/>} />
+	  {/* Ajoutez d'autres routes si nécessaire */}
 		</Routes>
-      
-    </Router>
+	  
+	</Router>
   );
 }
 

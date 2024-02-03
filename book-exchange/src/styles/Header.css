@@ -1,6 +1,43 @@
-.title{
+.title {
     color : #048BA8;
     background-color: #ECFEFA;
-    text-align: center;
     padding: 10px;
+	overflow: hidden;
+}
+
+.title h1{
+    float: left;
+}
+
+.title nav ul li{
+	margin-top: 15px;
+	float: right;
+	color: black;
+}
+
+.title nav ul li a{
+	color: white;
+	padding: 14px 16px;
+	background-color: grey;
+	border: none;
+    margin: 4px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.title nav ul li:hover{
+	text-decoration: underline;
+}
+
+a:link { 
+  text-decoration: none; 
+} 
+a:visited { 
+  text-decoration: none; 
+} 
+a:hover { 
+  text-decoration: none; 
+} 
+a:active { 
+  text-decoration: none; 
 }
