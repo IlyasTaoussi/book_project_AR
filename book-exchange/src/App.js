@@ -22,8 +22,8 @@ import LoginPage from './pages/LoginPage';
 
 function App() {
 	
-	const [loggedIn, setLoggedIn] = useState(false);
-	const [email, setEmail] = useState("");
+	const [loggedIn, setLoggedIn] = useState(false); // Logged in State: True or False
+	const [email, setEmail] = useState(""); // Connected Email State
 	
 	return (
 	<Router>

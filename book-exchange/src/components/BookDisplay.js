@@ -4,7 +4,6 @@ import '../styles/BookDisplay.css';
 
 const BookDisplay = (props) => {
 	const book = props;
-	console.log(book);
 	
 	return (
 		<a href="#">
