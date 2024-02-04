@@ -4,13 +4,14 @@ import '../styles/WelcomePage.css';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 
-import BookList from '../datas/BookList';
+import BookList from '../components/BookList';
 
 
-const WelcomePage = () => {
+const WelcomePage = (props) => {
+	const { loggedIn, email } = props
   return (
 	<div className="welcome-page">
-		<Header />
+		<Header email={email} loggedIn={loggedIn}/>
 		<div className="header-content">
 			<h1>BookBuddy</h1>
 			<div className="menu-section">
@@ -33,6 +34,7 @@ const WelcomePage = () => {
         <div className="team-presentation">
           <p>We are Aya, Maha, and Faustine, students from Polytech, working together to create this full-stack project.</p>
         </div>
+		<BookList />
       </main>
 	  
 	  <Footer />

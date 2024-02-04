@@ -13,9 +13,9 @@ const NavBar = (props) => {
 	return (
 	<nav>
 		<ul>
-			{(loggedIn ? <li><a class="button" href="/profile">Welcome {email}</a></li>
+			{(loggedIn ? <li><a className="button" href="/profile">Welcome {email}</a></li>
 				: 	<div>
-						<li><a class="button" href="/login">Login</a></li>
+						<li><a className="button" href="/login">Login</a></li>
 						<li>Register</li>
 					</div>
 			)}
