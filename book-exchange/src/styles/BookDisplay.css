@@ -29,6 +29,57 @@
   margin: 0 auto;
 }
 
+.tab-bar {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: #f8f8f8;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  
+}
+
+.tab-link {
+  font-size: 14px;
+  color: #999;
+  padding: 5px;
+  margin: 4px
+}
+
+.tab-link.active {
+  color: #333;
+  font-weight: bold;
+}
+
+.tab-icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 2px;
+}
+
+hr{
+	color: #f8f8f8;
+	backgroundColor: #f8f8f8;
+	height: 5
+}
+
+button{
+	backgroundColor: #f8f8f8;
+	padding: '12px 24px';
+	border: '1px solid #ddd';
+	borderBottom: 'none';
+	borderRadius: '4px 4px 0 0';
+	fontSize: '16px';
+	fontWeight: 'bold';
+	textTransform: 'uppercase';
+	textShadow: '1px 1px 0 rgba(0, 0, 0, 0.3)';
+	cursor: 'pointer';
+	transition: 'background-color 0.3s ease';
+}
+
 a:link { 
   text-decoration: none; 
 } 
